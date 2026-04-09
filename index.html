@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GeoReport</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="manifest" href="manifest.json"/>
+</head>
+
+<body>
+
+  <!-- SPLASH -->
+  <div id="splash">
+    <h1>GeoReport</h1>
+  </div>
+
+  <header class="navbar">
+    GeoReport
+  </header>
+
+  <main>
+
+    <section class="card" id="welcome-screen">
+      <h2>Bienvenido</h2>
+
+      <button id="main-btn" class="btn-primary" onclick="irAReporte()">
+        Crear Reporte
+      </button>
+    </section>
+
+    <section class="card" id="report-section" style="display:none;">
+      <h2>Reportes</h2>
+
+      <button id="new-btn" class="btn-primary" onclick="irAReporte()">
+        Nuevo
+      </button>
+
+      <ul id="report-list"></ul>
+    </section>
+
+  </main>
+
+  <button class="fab" onclick="irAReporte()">+</button>
+
+  <script src="js/db.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

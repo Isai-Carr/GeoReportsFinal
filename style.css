@@ -1,0 +1,101 @@
+:root {
+  --blue: #1e3a8a;
+  --light: #f2f6fc;
+  --card: #f6f2e9;
+  --danger: #dc2626;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: var(--light);
+}
+
+/* SPLASH */
+#splash {
+  position: fixed;
+  inset: 0;
+  background: var(--blue);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* NAVBAR */
+.navbar {
+  background: var(--blue);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* CONTENEDOR */
+main {
+  max-width: 360px;
+  margin: 15px auto;
+}
+
+/* CARD */
+.card {
+  background: var(--card);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* BOTONES */
+button {
+  padding: 6px;
+  font-size: 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-secondary {
+  background: #ddd;
+}
+
+/* FAB */
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #2563eb;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+/* FORM */
+input, textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 6px;
+}
+
+/* FOTO */
+#camera, .photo-preview {
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  margin-top: 5px;
+}
+
+/* OFFLINE */
+.offline-mode {
+  background: var(--danger) !important;
+}

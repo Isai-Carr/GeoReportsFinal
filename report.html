@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nuevo Reporte</title>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+  <header class="navbar">
+    Nuevo Reporte
+  </header>
+
+  <main>
+
+    <div class="card">
+
+      <h2>Crear reporte</h2>
+
+      <div class="grid">
+
+        <div>
+          <label>Título</label>
+          <input type="text" id="title" placeholder="Ej. Lámpara dañada">
+
+          <label>Descripción</label>
+          <textarea id="description" placeholder="Describe el problema..."></textarea>
+
+          <label>Ubicación</label>
+          <p id="coords">Obteniendo ubicación...</p>
+        </div>
+
+        <div>
+          <label>Fotografía</label>
+          <video id="camera" autoplay playsinline></video>
+          <canvas id="snapshot" style="display:none;"></canvas>
+
+          <button class="btn-secondary" id="btn-take-photo">
+            Tomar Foto
+          </button>
+
+          <img id="photo-preview" class="photo-preview">
+        </div>
+
+      </div>
+
+      <button class="btn-primary" id="btn-save-report">
+        Guardar Reporte
+      </button>
+
+    </div>
+
+  </main>
+
+  <script src="js/geo.js"></script>
+  <script src="js/camera.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/notifications.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
